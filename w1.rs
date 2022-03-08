@@ -41,6 +41,7 @@ fn solve(ans: &str) {
 	let mut misplaced_letters: [Vec<u8>; 5] = [vec![], vec![], vec![], vec![], vec![]];
 	// let mut guess = "music".as_bytes();
 	let mut guess = "abode".as_bytes();
+	let mut best_candidates = vec!["virls", "hunky"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
@@ -100,7 +101,18 @@ fn solve(ans: &str) {
 			new_words.push(w);
 		}
 		possible_words = new_words;
-		guess = possible_words[0].as_bytes();
+		let mut found = false;
+		while best_candidates.len() > 0 {
+			let tmp = best_candidates.pop().unwrap();
+			if let Ok(_) = possible_words.binary_search(&tmp) {
+				guess = tmp.as_bytes();
+				found = true;
+				break;
+			}
+		}
+		if ! found {
+			guess = possible_words[0].as_bytes();
+		}
 	}
 	println!("It was not able to solve: {}", ans);
 	dbg!(possible_words);
