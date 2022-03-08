@@ -12,6 +12,10 @@ enum PlaceStatus {
 
 fn main() {
 	solve("yuppy");
+	solve("table");
+	solve("music");
+	solve("proxy");
+	solve("cloth");
 }
 
 fn solve(ans: &str) {
@@ -55,7 +59,7 @@ fn solve(ans: &str) {
 			}
 		}
 		if correct_guess {
-			println!("Solved in {attempts} attempts.");
+			println!("Solved '{ans}' in {attempts} attempts.");
 			return;
 		}
 		if attempts == MAX_ATTEMPS { break; }
@@ -83,7 +87,7 @@ fn solve(ans: &str) {
 		}
 		possible_words = new_words;
 	}
-	println!("It was not able to solve: {}", std::str::from_utf8(answer).unwrap());
+	println!("It was not able to solve: {}", ans);
 	dbg!(possible_words);
 }
 
