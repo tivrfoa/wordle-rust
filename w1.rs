@@ -1,4 +1,5 @@
 const MAX_ATTEMPS: u8 = 6;
+const ALPHABET_SIZE: usize = 26;
 
 /*
 
@@ -10,29 +11,29 @@ enum PlaceStatus {
 */
 
 fn main() {
+	solve("yuppy");
+}
 
-
-	// let letters: Vec<u8> = ('A'..'Z').map(|c| c as u8).collect();
-	let letters: [u8; 25] = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89];
-	let answer: &[u8] = "CLOTH".as_bytes();
-
-	let guess = "TABLE".as_bytes();
-	assert!(! is_guess_correct(&check_guess(answer, guess)));
-
-	let guess = "CLOTH".as_bytes();
-	assert!(is_guess_correct(&check_guess(answer, guess)));
+fn solve(ans: &str) {
+	let answer: &[u8] = ans.as_bytes();
 
 	// let dictionary = ["TABLE", "PROXY", "MUSIC", "SWING", "CLOTH"];
-	let dictionary = vec!["TABLE", "PROXY", "MUSIC", "SWING", "CLOTH"];
+	// let dictionary = vec!["TABLE", "BREAD", "PROXY", "MUSIC", "SWING", "CLOTH"];
+	let dictionary: Vec<&str> = include_str!("dictionary.txt")
+		.split_whitespace()
+		// .map(|w| w.to_uppercase())
+		.collect();
 	let mut possible_words = dictionary.clone();
 
-	let mut bad_letters: [bool; 25] = [false; 25];
+	let mut bad_letters: [bool; ALPHABET_SIZE] = [false; ALPHABET_SIZE];
 	let mut good_letters: [Option<u8>; 5] = [None; 5];
 	// Rust does not accept this ... =(
 	// let mut misplaced_letters: [Vec<u8>; 5] = [vec![]; 5];
 	let mut misplaced_letters: [Vec<u8>; 5] = [vec![], vec![], vec![], vec![], vec![]];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
+		// dbg!(possible_words); move value?!!
+		// println!("{:?}", possible_words);
 		attempts += 1;
 		let guess = possible_words[0].as_bytes();
 		let resp = check_guess(answer, guess);
@@ -57,6 +58,7 @@ fn main() {
 			println!("Solved in {attempts} attempts.");
 			return;
 		}
+		if attempts == MAX_ATTEMPS { break; }
 		// update possible_words
 		let mut new_words = Vec::with_capacity(possible_words.len());
 		'w:
@@ -81,14 +83,17 @@ fn main() {
 		}
 		possible_words = new_words;
 	}
+	println!("It was not able to solve: {}", std::str::from_utf8(answer).unwrap());
+	dbg!(possible_words);
 }
 
-fn is_bad_letter(bad_letters: &[bool; 25], letter: u8) -> bool {
-	bad_letters[(letter - 65) as usize]
+// 'a' -> 97
+fn is_bad_letter(bad_letters: &[bool; ALPHABET_SIZE], letter: u8) -> bool {
+	bad_letters[(letter - 97) as usize]
 }
 
-fn set_bad_letter(bad_letters: &mut [bool; 25], letter: u8) {
-	bad_letters[(letter - 65) as usize] = true;
+fn set_bad_letter(bad_letters: &mut [bool; ALPHABET_SIZE], letter: u8) {
+	bad_letters[(letter - 97) as usize] = true;
 }
 
 fn check_guess(answer: &[u8], guess: &[u8]) -> [u8; 5] {
@@ -109,13 +114,3 @@ fn check_guess(answer: &[u8], guess: &[u8]) -> [u8; 5] {
 	resp
 }
 
-fn is_guess_correct(guess: &[u8; 5]) -> bool {
-	let mut correct_guess = true;
-	for i in 0..5 {
-		if guess[i] != 2 {
-			correct_guess = false;
-			break;
-		}
-	}
-	correct_guess
-}
