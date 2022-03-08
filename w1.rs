@@ -17,6 +17,10 @@ fn main() {
 	solve("proxy");
 	solve("hunky");
 	solve("junky");
+	solve("bubbe");
+	solve("audad");
+	solve("bagel");
+	solve("unbox");
 }
 
 fn solve(ans: &str) {
@@ -35,12 +39,13 @@ fn solve(ans: &str) {
 	// Rust does not accept this ... =(
 	// let mut misplaced_letters: [Vec<u8>; 5] = [vec![]; 5];
 	let mut misplaced_letters: [Vec<u8>; 5] = [vec![], vec![], vec![], vec![], vec![]];
+	// let mut guess = "music".as_bytes();
+	let mut guess = "abode".as_bytes();
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
 		// println!("{:?}", possible_words);
 		attempts += 1;
-		let guess = possible_words[0].as_bytes();
 		/*let guess = match attempts {
 			1 => "music".as_bytes(),
 			2 => "table".as_bytes(),
@@ -95,6 +100,7 @@ fn solve(ans: &str) {
 			new_words.push(w);
 		}
 		possible_words = new_words;
+		guess = possible_words[0].as_bytes();
 	}
 	println!("It was not able to solve: {}", ans);
 	dbg!(possible_words);
