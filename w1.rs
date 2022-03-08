@@ -11,11 +11,12 @@ enum PlaceStatus {
 */
 
 fn main() {
+	solve("sweet");
 	solve("yuppy");
-	solve("table");
-	solve("music");
+	solve("crazy");
 	solve("proxy");
-	solve("cloth");
+	solve("hunky");
+	solve("junky");
 }
 
 fn solve(ans: &str) {
@@ -40,6 +41,13 @@ fn solve(ans: &str) {
 		// println!("{:?}", possible_words);
 		attempts += 1;
 		let guess = possible_words[0].as_bytes();
+		/*let guess = match attempts {
+			1 => "music".as_bytes(),
+			2 => "table".as_bytes(),
+			3 => "proxy".as_bytes(),
+			_ => possible_words[0].as_bytes(),
+		};*/
+		println!("guess is {}", std::str::from_utf8(guess).unwrap());
 		let resp = check_guess(answer, guess);
 		let mut correct_guess = true;
 		for i in 0..5 {
@@ -58,6 +66,7 @@ fn solve(ans: &str) {
 				_ => panic!("Invalid value: {}", resp[i]),
 			}
 		}
+		// dbg!(resp);
 		if correct_guess {
 			println!("Solved '{ans}' in {attempts} attempts.");
 			return;
@@ -109,7 +118,7 @@ fn check_guess(answer: &[u8], guess: &[u8]) -> [u8; 5] {
 			if guess[i] == answer[j] {
 				if i == j {
 					resp[i] = 2;
-				} else {
+				} else if resp[i] != 2 {
 					resp[i] = 1;
 				}
 			}
