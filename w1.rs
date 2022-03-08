@@ -22,31 +22,73 @@ fn main() {
 	let guess = "CLOTH".as_bytes();
 	assert!(is_guess_correct(&check_guess(answer, guess)));
 
+	// let dictionary = ["TABLE", "PROXY", "MUSIC", "SWING", "CLOTH"];
+	let dictionary = vec!["TABLE", "PROXY", "MUSIC", "SWING", "CLOTH"];
+	let mut possible_words = dictionary.clone();
+
 	let mut bad_letters: [bool; 25] = [false; 25];
-	// (u8, u8) -> letter, PlaceStatus
-	let mut good_letters: [Option<(u8, u8)>; 5] = [None; 5];
+	let mut good_letters: [Option<u8>; 5] = [None; 5];
+	// Rust does not accept this ... =(
+	// let mut misplaced_letters: [Vec<u8>; 5] = [vec![]; 5];
+	let mut misplaced_letters: [Vec<u8>; 5] = [vec![], vec![], vec![], vec![], vec![]];
 	let mut attempts = 0;
-	while attemps <= MAX_ATTEMPS {
-		attemps += 1;
-		let guess = guess(&history, &dictionary);
+	while attempts <= MAX_ATTEMPS {
+		attempts += 1;
+		let guess = possible_words[0].as_bytes();
 		let resp = check_guess(answer, guess);
 		let mut correct_guess = true;
 		for i in 0..5 {
-			if guess[i] != 2 {
-				correct_guess = false;
-				break;
+			match resp[i] {
+				0 => {
+					correct_guess = false;
+					set_bad_letter(&mut bad_letters, guess[i]);
+				},
+				1 => {
+					correct_guess = false;
+					misplaced_letters[i].push(guess[i]);
+				},
+				2 => {
+					good_letters[i] = Some(guess[i]);
+				},
+				_ => panic!("Invalid value: {}", resp[i]),
 			}
 		}
-	correct_guess
-		if is_guess_correct(&resp) {
+		if correct_guess {
 			println!("Solved in {attempts} attempts.");
 			return;
 		}
+		// update possible_words
+		let mut new_words = Vec::with_capacity(possible_words.len());
+		'w:
+		for w in possible_words {
+			let b = w.as_bytes();
+			for i in 0..5 {
+				if is_bad_letter(&bad_letters, b[i]) {
+					continue 'w;
+				}
+				if let Some(l) = good_letters[i] {
+					if b[i] != l {
+						continue 'w;
+					}
+				}
+				for j in 0..misplaced_letters[i].len() {
+					if b[i] == misplaced_letters[i][j] {
+						continue 'w;
+					}
+				}
+			}
+			new_words.push(w);
+		}
+		possible_words = new_words;
 	}
 }
 
-fn guess(history: ss, dictionary: ss) -> &str {
-	"TABLE"
+fn is_bad_letter(bad_letters: &[bool; 25], letter: u8) -> bool {
+	bad_letters[(letter - 65) as usize]
+}
+
+fn set_bad_letter(bad_letters: &mut [bool; 25], letter: u8) {
+	bad_letters[(letter - 65) as usize] = true;
 }
 
 fn check_guess(answer: &[u8], guess: &[u8]) -> [u8; 5] {
