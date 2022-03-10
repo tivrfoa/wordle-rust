@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
 
@@ -11,7 +13,7 @@ enum PlaceStatus {
 */
 
 fn main() {
-	solve("sweet");
+	/*solve("sweet");
 	solve("yuppy");
 	solve("crazy");
 	solve("proxy");
@@ -20,28 +22,45 @@ fn main() {
 	solve("bubbe");
 	solve("audad");
 	solve("bagel");
-	solve("unbox");
-}
+	solve("unbox");*/
 
-fn solve(ans: &str) {
-	let answer: &[u8] = ans.as_bytes();
+	let mut qt_solved = 0;
+	let mut qt_failed = 0;
 
-	// let dictionary = ["TABLE", "PROXY", "MUSIC", "SWING", "CLOTH"];
-	// let dictionary = vec!["TABLE", "BREAD", "PROXY", "MUSIC", "SWING", "CLOTH"];
 	let dictionary: Vec<&str> = include_str!("dictionary.txt")
 		.split_whitespace()
-		// .map(|w| w.to_uppercase())
 		.collect();
+	for a in include_str!("answers.txt").split_whitespace().take(10) {
+		solve(a, &dictionary, &mut qt_solved, &mut qt_failed);
+	}
+	println!("Solved {qt_solved}");
+	println!("Failed {qt_failed}");
+}
+
+// fn solve(ans: &str) {
+fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut u32) {
+	let answer: &[u8] = ans.as_bytes();
+	println!("------------------> word of the day: {ans}");
 	let mut possible_words = dictionary.clone();
 
 	let mut bad_letters: [bool; ALPHABET_SIZE] = [false; ALPHABET_SIZE];
 	let mut good_letters: [Option<u8>; 5] = [None; 5];
 	// Rust does not accept this ... =(
 	// let mut misplaced_letters: [Vec<u8>; 5] = [vec![]; 5];
-	let mut misplaced_letters: [Vec<u8>; 5] = [vec![], vec![], vec![], vec![], vec![]];
+	let mut misplaced_letters: [HashSet<u8>; 5] = [
+		HashSet::new(),
+		HashSet::new(),
+		HashSet::new(),
+		HashSet::new(),
+		HashSet::new(),
+	];
 	// let mut guess = "music".as_bytes();
 	let mut guess = "abode".as_bytes();
-	let mut best_candidates = vec!["virls", "hunky"];
+	/*
+	other good words: about, acute, adbot, acyls, adept
+      wains, wafts, waift, wagyu, wacko, (watch, kedgy, virls)
+	*/
+	let mut best_candidates = vec!["hunky", "virls", "watch"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
@@ -64,7 +83,7 @@ fn solve(ans: &str) {
 				},
 				1 => {
 					correct_guess = false;
-					misplaced_letters[i].push(guess[i]);
+					misplaced_letters[i].insert(guess[i]);
 				},
 				2 => {
 					good_letters[i] = Some(guess[i]);
@@ -74,7 +93,8 @@ fn solve(ans: &str) {
 		}
 		// dbg!(resp);
 		if correct_guess {
-			println!("Solved '{ans}' in {attempts} attempts.");
+			// println!("Solved '{ans}' in {attempts} attempts.");
+			*qt_solved += 1;
 			return;
 		}
 		if attempts == MAX_ATTEMPS { break; }
@@ -92,15 +112,33 @@ fn solve(ans: &str) {
 						continue 'w;
 					}
 				}
-				for j in 0..misplaced_letters[i].len() {
-					if b[i] == misplaced_letters[i][j] {
+				for l in misplaced_letters[i].iter() {
+					if b[i] == *l {
 						continue 'w;
 					}
+				}
+			}
+			// check if misplaced letters exist in another place
+			for i in 0..5 {
+				let mut qt = 0;
+				for l in misplaced_letters[i].iter() {
+					for z in 0..5 {
+						if z == i { continue; }
+						if b[z] == *l { qt += 1; }
+					}
+				}
+				if qt < misplaced_letters[i].len() {
+					continue 'w;
 				}
 			}
 			new_words.push(w);
 		}
 		possible_words = new_words;
+		if possible_words.len() == 0 {
+			println!("Failed to find answer for {}", ans);
+			*qt_failed += 1;
+			return;
+		}
 		let mut found = false;
 		while best_candidates.len() > 0 {
 			let tmp = best_candidates.pop().unwrap();
@@ -114,8 +152,9 @@ fn solve(ans: &str) {
 			guess = possible_words[0].as_bytes();
 		}
 	}
-	println!("It was not able to solve: {}", ans);
+	// println!("It was not able to solve: {}", ans);
 	dbg!(possible_words);
+	*qt_failed += 1;
 }
 
 // 'a' -> 97
