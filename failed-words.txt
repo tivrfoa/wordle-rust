@@ -21,14 +21,11 @@ It was not able to solve: altar
 It was not able to solve: fixer
 It was not able to solve: finer
 It was not able to solve: surer
-It was not able to solve: prove
 It was not able to solve: using
 It was not able to solve: crank
 It was not able to solve: query
 It was not able to solve: solar
-It was not able to solve: perky
 It was not able to solve: aroma
-It was not able to solve: mourn
 It was not able to solve: harry
 It was not able to solve: stove
 It was not able to solve: fewer
@@ -49,7 +46,6 @@ It was not able to solve: gauze
 It was not able to solve: charm
 It was not able to solve: class
 It was not able to solve: thyme
-It was not able to solve: grove
 It was not able to solve: mummy
 It was not able to solve: spell
 It was not able to solve: crave
@@ -59,7 +55,6 @@ It was not able to solve: musty
 It was not able to solve: total
 It was not able to solve: mound
 It was not able to solve: apple
-It was not able to solve: prone
 It was not able to solve: bowel
 It was not able to solve: dross
 It was not able to solve: might
@@ -73,7 +68,6 @@ It was not able to solve: borax
 It was not able to solve: savvy
 It was not able to solve: pried
 It was not able to solve: boule
-It was not able to solve: blink
 It was not able to solve: poppy
 It was not able to solve: swore
 It was not able to solve: mason
@@ -111,6 +105,7 @@ It was not able to solve: share
 It was not able to solve: spore
 It was not able to solve: inner
 It was not able to solve: shank
+It was not able to solve: bushy
 It was not able to solve: woody
 It was not able to solve: where
 It was not able to solve: sassy
@@ -128,7 +123,6 @@ It was not able to solve: aware
 It was not able to solve: shirk
 It was not able to solve: puppy
 It was not able to solve: bunny
-It was not able to solve: bully
 It was not able to solve: boxer
 It was not able to solve: droop
 It was not able to solve: steep
@@ -136,7 +130,6 @@ It was not able to solve: smash
 It was not able to solve: mammy
 It was not able to solve: wager
 It was not able to solve: remit
-It was not able to solve: racer
 It was not able to solve: prowl
 It was not able to solve: grown
 It was not able to solve: gravy
@@ -145,12 +138,11 @@ It was not able to solve: renal
 It was not able to solve: never
 It was not able to solve: yeast
 It was not able to solve: scalp
+It was not able to solve: bitty
 It was not able to solve: super
 It was not able to solve: detox
 It was not able to solve: plied
-It was not able to solve: burly
 It was not able to solve: waxen
-It was not able to solve: jerky
 It was not able to solve: hussy
 It was not able to solve: wispy
 It was not able to solve: route
@@ -171,7 +163,6 @@ It was not able to solve: gazer
 It was not able to solve: piper
 It was not able to solve: maize
 It was not able to solve: riper
-It was not able to solve: billy
 It was not able to solve: liner
 It was not able to solve: navel
 It was not able to solve: unwed
@@ -213,6 +204,7 @@ It was not able to solve: butte
 It was not able to solve: rarer
 It was not able to solve: amiss
 It was not able to solve: waver
+It was not able to solve: wafer
 It was not able to solve: revel
 It was not able to solve: talon
 It was not able to solve: salve
@@ -222,6 +214,7 @@ It was not able to solve: stiff
 It was not able to solve: plaza
 It was not able to solve: stall
 It was not able to solve: purer
+It was not able to solve: merry
 It was not able to solve: papal
 It was not able to solve: berry
 It was not able to solve: penny
@@ -229,6 +222,7 @@ It was not able to solve: rally
 It was not able to solve: parka
 It was not able to solve: reuse
 It was not able to solve: gloss
+It was not able to solve: gayer
 It was not able to solve: tonga
 It was not able to solve: flare
 It was not able to solve: wound
@@ -267,5 +261,5 @@ It was not able to solve: match
 It was not able to solve: rower
 It was not able to solve: rural
 It was not able to solve: shave
-Solved 2040
-Failed 269
+Solved 2046
+Failed 263

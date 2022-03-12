@@ -62,14 +62,15 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 	// let mut guess = "proxy".as_bytes();
 	let mut guess = "abode".as_bytes();
 	let mut best_candidates = vec!["joker",
+		"burly",
 		"untie",
 		"hunky",
 		"known", "kains", "kedgy",
-		"mayor", "minus", "moans", "music",
-		"rover", "rayon",
+		"mourn", "mayor", "minus", "moans", "music",
+		"racer", "rover", "rayon",
 		"virls",
 		"rusty",
-		"paper", "picky", "patch", "proxy", "paste",
+		"perky", "paper", "picky", "patch", "prone", "proxy", "paste",
 		"troop", "tower", "tasty", "teary", "table",
 		"spike", "steer", "stark", "steal", "stack", "store", "scary",
 		"worst", "winch", "watch"];
