@@ -7,7 +7,6 @@ It was not able to solve: marry
 It was not able to solve: batty
 It was not able to solve: unfed
 It was not able to solve: crazy
-It was not able to solve: sower
 It was not able to solve: stout
 It was not able to solve: panel
 It was not able to solve: crass
@@ -152,7 +151,6 @@ It was not able to solve: toast
 It was not able to solve: swell
 It was not able to solve: latch
 It was not able to solve: mover
-It was not able to solve: sober
 It was not able to solve: vying
 It was not able to solve: whale
 It was not able to solve: terse
@@ -204,6 +202,7 @@ It was not able to solve: toddy
 It was not able to solve: stall
 It was not able to solve: merry
 It was not able to solve: papal
+It was not able to solve: skier
 It was not able to solve: penny
 It was not able to solve: gross
 It was not able to solve: avian
@@ -235,5 +234,5 @@ It was not able to solve: vaunt
 It was not able to solve: match
 It was not able to solve: riser
 It was not able to solve: rower
-Solved 2072
-Failed 237
+Solved 2073
+Failed 236
