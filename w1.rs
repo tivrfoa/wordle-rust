@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
-const LAST_BEST: u32 = 2021;
+const LAST_BEST: u32 = 2034;
 
 /*
 
@@ -64,7 +64,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 	other good words: about, acute, adbot, acyls, adept
       wains, wafts, waift, wagyu, wacko, (watch, kedgy, virls)
 	*/
-	let mut best_candidates = vec!["picky", "minus", "joker", "tower", "winch", "stark", "mayor", "tasty", "proxy", "store", "paper", "rover", "spike", "troop", "worst", "untie", "steer", "known", "kedgy", "moans", "rayon", "hunky", "virls", "watch", "stack", "state", "table", "scary"];
+	let mut best_candidates = vec!["picky", "minus", "joker", "tower", "winch", "stark", "mayor", "tasty", "proxy", "store", "paper", "rover", "spike", "troop", "worst", "untie", "steer", "known", "kedgy", "moans", "rayon", "hunky", "teary", "steal", "virls", "watch", "stack", "state", "table", "scary"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
