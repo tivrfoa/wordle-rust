@@ -29,7 +29,6 @@ It was not able to solve: masse
 It was not able to solve: craze
 It was not able to solve: weary
 It was not able to solve: query
-It was not able to solve: proxy
 It was not able to solve: perky
 It was not able to solve: pause
 It was not able to solve: aroma
@@ -39,11 +38,11 @@ It was not able to solve: saute
 It was not able to solve: harry
 It was not able to solve: stove
 It was not able to solve: fewer
-It was not able to solve: stair
 It was not able to solve: zesty
 It was not able to solve: larva
 It was not able to solve: story
 It was not able to solve: vouch
+It was not able to solve: trait
 It was not able to solve: payer
 It was not able to solve: loser
 It was not able to solve: retro
@@ -68,7 +67,6 @@ It was not able to solve: spite
 It was not able to solve: plume
 It was not able to solve: total
 It was not able to solve: mound
-It was not able to solve: stray
 It was not able to solve: manga
 It was not able to solve: paste
 It was not able to solve: apple
@@ -81,6 +79,7 @@ It was not able to solve: smile
 It was not able to solve: dross
 It was not able to solve: patio
 It was not able to solve: might
+It was not able to solve: stamp
 It was not able to solve: still
 It was not able to solve: aping
 It was not able to solve: pushy
@@ -148,7 +147,6 @@ It was not able to solve: sweat
 It was not able to solve: tardy
 It was not able to solve: bonus
 It was not able to solve: rearm
-It was not able to solve: mayor
 It was not able to solve: usage
 It was not able to solve: randy
 It was not able to solve: prank
@@ -256,15 +254,14 @@ It was not able to solve: stave
 It was not able to solve: stiff
 It was not able to solve: plaza
 It was not able to solve: women
+It was not able to solve: stall
 It was not able to solve: purer
-It was not able to solve: trail
 It was not able to solve: wheat
 It was not able to solve: berry
 It was not able to solve: penny
 It was not able to solve: rally
 It was not able to solve: scary
 It was not able to solve: parka
-It was not able to solve: stark
 It was not able to solve: gloss
 It was not able to solve: flare
 It was not able to solve: wound
@@ -301,5 +298,5 @@ It was not able to solve: rayon
 It was not able to solve: match
 It was not able to solve: rural
 It was not able to solve: shave
-Solved 2006
-Failed 303
+Solved 2009
+Failed 300
