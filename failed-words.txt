@@ -31,7 +31,6 @@ It was not able to solve: trove
 It was not able to solve: chant
 It was not able to solve: sweet
 It was not able to solve: tease
-It was not able to solve: cater
 It was not able to solve: stove
 It was not able to solve: royal
 It was not able to solve: foyer
@@ -39,6 +38,7 @@ It was not able to solve: shown
 It was not able to solve: zesty
 It was not able to solve: larva
 It was not able to solve: homer
+It was not able to solve: gamer
 It was not able to solve: vouch
 It was not able to solve: bayou
 It was not able to solve: showy
@@ -73,7 +73,6 @@ It was not able to solve: still
 It was not able to solve: aping
 It was not able to solve: pushy
 It was not able to solve: tamer
-It was not able to solve: hater
 It was not able to solve: brawn
 It was not able to solve: freer
 It was not able to solve: nicer
@@ -138,7 +137,6 @@ It was not able to solve: droop
 It was not able to solve: steep
 It was not able to solve: mammy
 It was not able to solve: swamp
-It was not able to solve: wager
 It was not able to solve: prowl
 It was not able to solve: deity
 It was not able to solve: ditty
@@ -176,7 +174,6 @@ It was not able to solve: order
 It was not able to solve: pivot
 It was not able to solve: spare
 It was not able to solve: moody
-It was not able to solve: water
 It was not able to solve: basis
 It was not able to solve: under
 It was not able to solve: swing
@@ -195,7 +192,6 @@ It was not able to solve: swoop
 It was not able to solve: sixty
 It was not able to solve: shout
 It was not able to solve: waver
-It was not able to solve: wafer
 It was not able to solve: scowl
 It was not able to solve: talon
 It was not able to solve: scout
@@ -217,7 +213,6 @@ It was not able to solve: gayer
 It was not able to solve: wound
 It was not able to solve: salvo
 It was not able to solve: sappy
-It was not able to solve: taker
 It was not able to solve: ovine
 It was not able to solve: mambo
 It was not able to solve: alloy
@@ -242,5 +237,5 @@ It was not able to solve: vaunt
 It was not able to solve: match
 It was not able to solve: riser
 It was not able to solve: rower
-Solved 2065
-Failed 244
+Solved 2070
+Failed 239
