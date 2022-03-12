@@ -61,7 +61,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 	other good words: about, acute, adbot, acyls, adept
       wains, wafts, waift, wagyu, wacko, (watch, kedgy, virls)
 	*/
-	let mut best_candidates = vec!["hunky", "virls", "watch"];
+	let mut best_candidates = vec!["wafts", "kedgy", "moans", "hunky", "virls", "watch"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
