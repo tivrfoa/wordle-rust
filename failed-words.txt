@@ -21,6 +21,7 @@ It was not able to solve: altar
 It was not able to solve: fixer
 It was not able to solve: finer
 It was not able to solve: surer
+It was not able to solve: grime
 It was not able to solve: using
 It was not able to solve: crank
 It was not able to solve: query
@@ -45,20 +46,19 @@ It was not able to solve: patty
 It was not able to solve: gauze
 It was not able to solve: charm
 It was not able to solve: class
-It was not able to solve: thyme
 It was not able to solve: mummy
 It was not able to solve: spell
 It was not able to solve: crave
-It was not able to solve: spite
 It was not able to solve: valve
 It was not able to solve: musty
+It was not able to solve: rifle
 It was not able to solve: total
 It was not able to solve: mound
 It was not able to solve: apple
 It was not able to solve: bowel
+It was not able to solve: smile
 It was not able to solve: dross
 It was not able to solve: might
-It was not able to solve: write
 It was not able to solve: stamp
 It was not able to solve: still
 It was not able to solve: aping
@@ -72,11 +72,9 @@ It was not able to solve: poppy
 It was not able to solve: swore
 It was not able to solve: mason
 It was not able to solve: beset
-It was not able to solve: queue
 It was not able to solve: verse
 It was not able to solve: range
 It was not able to solve: verve
-It was not able to solve: title
 It was not able to solve: ruler
 It was not able to solve: layer
 It was not able to solve: tatty
@@ -100,6 +98,7 @@ It was not able to solve: pitch
 It was not able to solve: trout
 It was not able to solve: husky
 It was not able to solve: brave
+It was not able to solve: slime
 It was not able to solve: regal
 It was not able to solve: share
 It was not able to solve: spore
@@ -107,7 +106,6 @@ It was not able to solve: inner
 It was not able to solve: shank
 It was not able to solve: bushy
 It was not able to solve: woody
-It was not able to solve: where
 It was not able to solve: sassy
 It was not able to solve: array
 It was not able to solve: vapid
@@ -131,6 +129,7 @@ It was not able to solve: mammy
 It was not able to solve: wager
 It was not able to solve: remit
 It was not able to solve: prowl
+It was not able to solve: spire
 It was not able to solve: grown
 It was not able to solve: gravy
 It was not able to solve: wider
@@ -156,7 +155,6 @@ It was not able to solve: mover
 It was not able to solve: vying
 It was not able to solve: shark
 It was not able to solve: whale
-It was not able to solve: terse
 It was not able to solve: suave
 It was not able to solve: tithe
 It was not able to solve: gazer
@@ -182,7 +180,6 @@ It was not able to solve: harpy
 It was not able to solve: refer
 It was not able to solve: tally
 It was not able to solve: drawn
-It was not able to solve: suite
 It was not able to solve: lupus
 It was not able to solve: miner
 It was not able to solve: chasm
@@ -261,5 +258,5 @@ It was not able to solve: match
 It was not able to solve: rower
 It was not able to solve: rural
 It was not able to solve: shave
-Solved 2046
-Failed 263
+Solved 2049
+Failed 260
