@@ -14,6 +14,7 @@ It was not able to solve: crass
 It was not able to solve: totem
 It was not able to solve: parry
 It was not able to solve: start
+It was not able to solve: goner
 It was not able to solve: round
 It was not able to solve: spray
 It was not able to solve: dowry
@@ -28,6 +29,7 @@ It was not able to solve: prove
 It was not able to solve: masse
 It was not able to solve: craze
 It was not able to solve: weary
+It was not able to solve: picky
 It was not able to solve: query
 It was not able to solve: perky
 It was not able to solve: pause
@@ -46,7 +48,6 @@ It was not able to solve: trait
 It was not able to solve: payer
 It was not able to solve: loser
 It was not able to solve: retro
-It was not able to solve: night
 It was not able to solve: liver
 It was not able to solve: wedge
 It was not able to solve: power
@@ -69,6 +70,7 @@ It was not able to solve: mound
 It was not able to solve: manga
 It was not able to solve: paste
 It was not able to solve: apple
+It was not able to solve: minty
 It was not able to solve: nanny
 It was not able to solve: woozy
 It was not able to solve: chase
@@ -85,7 +87,6 @@ It was not able to solve: pushy
 It was not able to solve: tamer
 It was not able to solve: hater
 It was not able to solve: awoke
-It was not able to solve: winch
 It was not able to solve: borax
 It was not able to solve: savvy
 It was not able to solve: pried
@@ -140,7 +141,6 @@ It was not able to solve: sassy
 It was not able to solve: graze
 It was not able to solve: array
 It was not able to solve: vapid
-It was not able to solve: lower
 It was not able to solve: sweat
 It was not able to solve: tardy
 It was not able to solve: bonus
@@ -186,7 +186,6 @@ It was not able to solve: radii
 It was not able to solve: lager
 It was not able to solve: swell
 It was not able to solve: upper
-It was not able to solve: wight
 It was not able to solve: shark
 It was not able to solve: whale
 It was not able to solve: suave
@@ -203,8 +202,6 @@ It was not able to solve: liner
 It was not able to solve: snake
 It was not able to solve: unwed
 It was not able to solve: stump
-It was not able to solve: witty
-It was not able to solve: wimpy
 It was not able to solve: saner
 It was not able to solve: manic
 It was not able to solve: pivot
@@ -232,7 +229,6 @@ It was not able to solve: torus
 It was not able to solve: ninny
 It was not able to solve: viper
 It was not able to solve: vogue
-It was not able to solve: minim
 It was not able to solve: terra
 It was not able to solve: minus
 It was not able to solve: teary
@@ -244,11 +240,9 @@ It was not able to solve: tripe
 It was not able to solve: spine
 It was not able to solve: rarer
 It was not able to solve: amiss
-It was not able to solve: tower
 It was not able to solve: waver
 It was not able to solve: revel
 It was not able to solve: talon
-It was not able to solve: pinky
 It was not able to solve: stave
 It was not able to solve: stiff
 It was not able to solve: plaza
@@ -280,7 +274,6 @@ It was not able to solve: newer
 It was not able to solve: lever
 It was not able to solve: gauge
 It was not able to solve: latte
-It was not able to solve: witch
 It was not able to solve: rapid
 It was not able to solve: happy
 It was not able to solve: newly
@@ -289,6 +282,7 @@ It was not able to solve: brown
 It was not able to solve: wiser
 It was not able to solve: press
 It was not able to solve: eying
+It was not able to solve: pinch
 It was not able to solve: spied
 It was not able to solve: rodeo
 It was not able to solve: vaunt
@@ -297,5 +291,5 @@ It was not able to solve: rayon
 It was not able to solve: match
 It was not able to solve: rural
 It was not able to solve: shave
-Solved 2010
-Failed 299
+Solved 2016
+Failed 293
