@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
-const LAST_BEST: u32 = 2051;
+const LAST_BEST: u32 = 2064;
 
 /*
 
@@ -59,8 +59,8 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		HashSet::new(),
 	];
 	
-	// let mut guess = "proxy".as_bytes();
-	let mut guess = "abode".as_bytes();
+	// chosed based on frequency
+	let mut guess = "sared".as_bytes();
 	let mut best_candidates = vec!["joker",
 		"burly",
 		"untie",
@@ -73,7 +73,8 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		"perky", "paper", "picky", "patch", "prone", "proxy", "paste",
 		"troop", "tower", "tasty", "teary", "table",
 		"spike", "steer", "stark", "steal", "stack", "store", "spite", "scary", "super",
-		"worst", "winch", "watch"];
+		"worst", "winch", "watch",
+		"ceils"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
