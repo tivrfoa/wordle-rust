@@ -1,4 +1,38 @@
 
+Currently it solves 2065 out of 2309 words ... not that bad ...
+
+The Jon Gjengset `escore` implementation only fails to solve 19 words in no more than
+6 attempts, which is amazing!!
+
+```
+$ cargo run --release -- --implementation escore
+    Finished release [optimized + debuginfo] target(s) in 0.03s
+     Running `target/release/roget --implementation escore`
+ 1:                                (0)
+ 2: #                              (90)
+ 3: ############                   (894)
+ 4: #############                  (999)
+ 5: ###                            (253)
+ 6: #                              (54)
+ 7:                                (15)
+ 8:                                (4)
+average score: 3.7176
+```
+
+[https://github.com/jonhoo/roget](https://github.com/jonhoo/roget)
+
+## Implementation
+
+It uses a list made by hand which I suppose are good
+candidates ..., if doesn't find one there, and then it chooses the first
+one from the remaining list.
+
+Some approaches that I guess are good:
+  1. In each turn choose the word from the remaining list that
+  eliminates most of the other words. Maybe it doesn't need to be from
+  the remaining words and can be one from the dictionary ...
+  2. In each turn calculate the frequency of each letter in each position
+  and choose an remaining word based on that.
 
 ## Finding frequency of each letter in each position:
 
