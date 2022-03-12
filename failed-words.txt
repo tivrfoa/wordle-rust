@@ -27,7 +27,6 @@ It was not able to solve: light
 It was not able to solve: ulcer
 It was not able to solve: swill
 It was not able to solve: trove
-It was not able to solve: chant
 It was not able to solve: sweet
 It was not able to solve: tease
 It was not able to solve: stove
@@ -52,10 +51,8 @@ It was not able to solve: gauze
 It was not able to solve: taunt
 It was not able to solve: class
 It was not able to solve: sting
-It was not able to solve: aptly
 It was not able to solve: pooch
 It was not able to solve: crave
-It was not able to solve: total
 It was not able to solve: pagan
 It was not able to solve: udder
 It was not able to solve: stray
@@ -63,13 +60,11 @@ It was not able to solve: spilt
 It was not able to solve: minty
 It was not able to solve: nanny
 It was not able to solve: sleet
-It was not able to solve: annul
 It was not able to solve: might
 It was not able to solve: write
 It was not able to solve: queer
 It was not able to solve: stamp
 It was not able to solve: still
-It was not able to solve: aping
 It was not able to solve: pushy
 It was not able to solve: tamer
 It was not able to solve: brawn
@@ -84,6 +79,7 @@ It was not able to solve: dumpy
 It was not able to solve: swore
 It was not able to solve: flyer
 It was not able to solve: verse
+It was not able to solve: llama
 It was not able to solve: hovel
 It was not able to solve: verve
 It was not able to solve: basin
@@ -92,6 +88,7 @@ It was not able to solve: matey
 It was not able to solve: river
 It was not able to solve: later
 It was not able to solve: wrist
+It was not able to solve: vocal
 It was not able to solve: diver
 It was not able to solve: poser
 It was not able to solve: sweep
@@ -110,7 +107,6 @@ It was not able to solve: stilt
 It was not able to solve: sheet
 It was not able to solve: cross
 It was not able to solve: pouch
-It was not able to solve: viola
 It was not able to solve: woody
 It was not able to solve: sassy
 It was not able to solve: sauna
@@ -125,7 +121,6 @@ It was not able to solve: poise
 It was not able to solve: prank
 It was not able to solve: drove
 It was not able to solve: stint
-It was not able to solve: apply
 It was not able to solve: tarot
 It was not able to solve: serum
 It was not able to solve: puppy
@@ -135,6 +130,7 @@ It was not able to solve: droop
 It was not able to solve: steep
 It was not able to solve: mammy
 It was not able to solve: swamp
+It was not able to solve: along
 It was not able to solve: prowl
 It was not able to solve: deity
 It was not able to solve: ditty
@@ -212,7 +208,6 @@ It was not able to solve: salvo
 It was not able to solve: sappy
 It was not able to solve: ovine
 It was not able to solve: mambo
-It was not able to solve: alloy
 It was not able to solve: swash
 It was not able to solve: tight
 It was not able to solve: tango
@@ -223,6 +218,7 @@ It was not able to solve: spear
 It was not able to solve: magma
 It was not able to solve: punch
 It was not able to solve: forte
+It was not able to solve: alibi
 It was not able to solve: stash
 It was not able to solve: wiser
 It was not able to solve: press
@@ -234,5 +230,5 @@ It was not able to solve: vaunt
 It was not able to solve: match
 It was not able to solve: riser
 It was not able to solve: rower
-Solved 2073
-Failed 236
+Solved 2077
+Failed 232

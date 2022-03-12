@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
-const LAST_BEST: u32 = 2073;
+const LAST_BEST: u32 = 2077;
 
 /*
 
@@ -46,8 +46,8 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
     // 'sared' was chosen based on the frequency
     let mut guess = "sared".as_bytes();
     let mut best_candidates = vec![
-        "joker", "burly", "untie", "hunky", "known", "kains", "kedgy", "mourn", "mayor", "minus",
-        "moans", "music", "racer", "rover", "riper", "rayon", "rates", "virls", "rusty", "perky",
+        "joker", "aptly", "virls", "burly", "untie", "hunky", "known", "kains", "kedgy", "mourn", "mayor", "minus",
+        "moans", "music", "racer", "rover", "riper", "rayon", "rates", "rusty", "perky",
         "paper", "picky", "patch", "prone", "proxy", "paste", "troop", "tower", "tasty", "teary",
         "table", "spike", "steer", "stark", "steal", "stack", "store", "spite", "scary", "super", "sower",
         "worst", "winch", "watch", "worse", "wares", "layer", "water", "baldy", "ceils",
