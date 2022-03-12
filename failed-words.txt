@@ -56,7 +56,6 @@ It was not able to solve: treat
 It was not able to solve: waste
 It was not able to solve: gauze
 It was not able to solve: charm
-It was not able to solve: taunt
 It was not able to solve: grove
 It was not able to solve: mummy
 It was not able to solve: sneak
@@ -139,7 +138,6 @@ It was not able to solve: relay
 It was not able to solve: woody
 It was not able to solve: sassy
 It was not able to solve: graze
-It was not able to solve: tasty
 It was not able to solve: array
 It was not able to solve: vapid
 It was not able to solve: lower
@@ -220,6 +218,7 @@ It was not able to solve: basis
 It was not able to solve: under
 It was not able to solve: harpy
 It was not able to solve: refer
+It was not able to solve: tally
 It was not able to solve: drawn
 It was not able to solve: swing
 It was not able to solve: taste
@@ -298,5 +297,5 @@ It was not able to solve: rayon
 It was not able to solve: match
 It was not able to solve: rural
 It was not able to solve: shave
-Solved 2009
-Failed 300
+Solved 2010
+Failed 299
