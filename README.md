@@ -24,7 +24,7 @@ average score: 3.7176
 ## Implementation
 
 It uses a list made by hand which I suppose are good
-candidates ..., if it doesn't find one there, and then it chooses the first
+candidates ..., if it doesn't find one there, then it chooses the first
 one from the remaining list.
 
 Some approaches that I guess are good:
