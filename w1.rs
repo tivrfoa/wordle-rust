@@ -67,12 +67,6 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		// dbg!(possible_words); move value?!!
 		// println!("{:?}", possible_words);
 		attempts += 1;
-		/*let guess = match attempts {
-			1 => "music".as_bytes(),
-			2 => "table".as_bytes(),
-			3 => "proxy".as_bytes(),
-			_ => possible_words[0].as_bytes(),
-		};*/
 		// println!("guess is {}", std::str::from_utf8(guess).unwrap());
 		let resp = check_guess(answer, guess);
 		let mut correct_guess = true;
@@ -99,6 +93,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 			return;
 		}
 		if attempts == MAX_ATTEMPS { break; }
+
 		// update possible_words
 		let mut new_words = Vec::with_capacity(possible_words.len());
 		'w:
