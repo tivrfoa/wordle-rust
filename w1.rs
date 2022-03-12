@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
-const LAST_BEST: u32 = 2064;
+const LAST_BEST: u32 = 2065;
 
 /*
 
@@ -14,17 +14,6 @@ enum PlaceStatus {
 */
 
 fn main() {
-	/*solve("sweet");
-	solve("yuppy");
-	solve("crazy");
-	solve("proxy");
-	solve("hunky");
-	solve("junky");
-	solve("bubbe");
-	solve("audad");
-	solve("bagel");
-	solve("unbox");*/
-
 	let mut qt_solved = 0;
 	let mut qt_failed = 0;
 
@@ -41,7 +30,6 @@ fn main() {
 	assert!(qt_solved >= LAST_BEST);
 }
 
-// fn solve(ans: &str) {
 fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut u32) {
 	let answer: &[u8] = ans.as_bytes();
 	// println!("------------------> word of the day: {ans}");
@@ -49,8 +37,6 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 
 	let mut bad_letters: [bool; ALPHABET_SIZE] = [false; ALPHABET_SIZE];
 	let mut good_letters: [Option<u8>; 5] = [None; 5];
-	// Rust does not accept this ... =(
-	// let mut misplaced_letters: [Vec<u8>; 5] = [vec![]; 5];
 	let mut misplaced_letters: [HashSet<u8>; 5] = [
 		HashSet::new(),
 		HashSet::new(),
@@ -59,7 +45,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		HashSet::new(),
 	];
 	
-	// chosed based on frequency
+	// 'sared' was chosen based on the frequency
 	let mut guess = "sared".as_bytes();
 	let mut best_candidates = vec!["joker",
 		"burly",
@@ -67,13 +53,14 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		"hunky",
 		"known", "kains", "kedgy",
 		"mourn", "mayor", "minus", "moans", "music",
-		"racer", "rover", "riper", "rayon",
+		"racer", "rover", "riper", "rayon", "rates",
 		"virls",
 		"rusty",
 		"perky", "paper", "picky", "patch", "prone", "proxy", "paste",
 		"troop", "tower", "tasty", "teary", "table",
 		"spike", "steer", "stark", "steal", "stack", "store", "spite", "scary", "super",
-		"worst", "winch", "watch",
+		"worst", "winch", "watch", "worse", "wares",
+		"baldy",
 		"ceils"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {

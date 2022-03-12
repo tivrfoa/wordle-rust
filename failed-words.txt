@@ -159,6 +159,7 @@ It was not able to solve: mover
 It was not able to solve: sober
 It was not able to solve: vying
 It was not able to solve: whale
+It was not able to solve: terse
 It was not able to solve: suave
 It was not able to solve: swung
 It was not able to solve: tithe
@@ -192,7 +193,6 @@ It was not able to solve: terra
 It was not able to solve: tried
 It was not able to solve: swoop
 It was not able to solve: sixty
-It was not able to solve: worse
 It was not able to solve: shout
 It was not able to solve: waver
 It was not able to solve: wafer
@@ -215,7 +215,6 @@ It was not able to solve: avian
 It was not able to solve: satin
 It was not able to solve: gayer
 It was not able to solve: wound
-It was not able to solve: paddy
 It was not able to solve: salvo
 It was not able to solve: sappy
 It was not able to solve: taker
@@ -243,5 +242,5 @@ It was not able to solve: vaunt
 It was not able to solve: match
 It was not able to solve: riser
 It was not able to solve: rower
-Solved 2064
-Failed 245
+Solved 2065
+Failed 244
