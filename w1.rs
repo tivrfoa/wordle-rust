@@ -30,7 +30,8 @@ fn main() {
 	let dictionary: Vec<&str> = include_str!("dictionary.txt")
 		.split_whitespace()
 		.collect();
-	for a in include_str!("answers.txt").split_whitespace().take(10) {
+	// for a in include_str!("answers.txt").split_whitespace().take(10) {
+	for a in include_str!("answers.txt").split_whitespace() {
 		solve(a, &dictionary, &mut qt_solved, &mut qt_failed);
 	}
 	println!("Solved {qt_solved}");
@@ -40,7 +41,7 @@ fn main() {
 // fn solve(ans: &str) {
 fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut u32) {
 	let answer: &[u8] = ans.as_bytes();
-	println!("------------------> word of the day: {ans}");
+	// println!("------------------> word of the day: {ans}");
 	let mut possible_words = dictionary.clone();
 
 	let mut bad_letters: [bool; ALPHABET_SIZE] = [false; ALPHABET_SIZE];
@@ -72,7 +73,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 			3 => "proxy".as_bytes(),
 			_ => possible_words[0].as_bytes(),
 		};*/
-		println!("guess is {}", std::str::from_utf8(guess).unwrap());
+		// println!("guess is {}", std::str::from_utf8(guess).unwrap());
 		let resp = check_guess(answer, guess);
 		let mut correct_guess = true;
 		for i in 0..5 {
@@ -135,7 +136,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		}
 		possible_words = new_words;
 		if possible_words.len() == 0 {
-			println!("Failed to find answer for {}", ans);
+			//println!("Failed to find answer for {}", ans);
 			*qt_failed += 1;
 			return;
 		}
@@ -153,7 +154,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 		}
 	}
 	// println!("It was not able to solve: {}", ans);
-	dbg!(possible_words);
+	//dbg!(possible_words);
 	*qt_failed += 1;
 }
 
