@@ -24,7 +24,7 @@ average score: 3.7176
 ## Implementation
 
 It uses a list made by hand which I suppose are good
-candidates ..., if doesn't find one there, and then it chooses the first
+candidates ..., if it doesn't find one there, and then it chooses the first
 one from the remaining list.
 
 Some approaches that I guess are good:
@@ -32,7 +32,7 @@ Some approaches that I guess are good:
   eliminates most of the other words. Maybe it doesn't need to be from
   the remaining words and can be one from the dictionary ...
   2. In each turn calculate the frequency of each letter in each position
-  and choose an remaining word based on that.
+  and choose a remaining word based on that.
 
 ## Finding frequency of each letter in each position:
 
