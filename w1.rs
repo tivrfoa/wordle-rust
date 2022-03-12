@@ -61,7 +61,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 	other good words: about, acute, adbot, acyls, adept
       wains, wafts, waift, wagyu, wacko, (watch, kedgy, virls)
 	*/
-	let mut best_candidates = vec!["wafts", "kedgy", "moans", "hunky", "virls", "watch"];
+	let mut best_candidates = vec!["steer", "known", "kedgy", "moans", "hunky", "virls", "watch"];
 	let mut attempts = 0;
 	while attempts <= MAX_ATTEMPS {
 		// dbg!(possible_words); move value?!!
@@ -153,7 +153,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
 			guess = possible_words[0].as_bytes();
 		}
 	}
-	// println!("It was not able to solve: {}", ans);
+	println!("It was not able to solve: {}", ans);
 	//dbg!(possible_words);
 	*qt_failed += 1;
 }
