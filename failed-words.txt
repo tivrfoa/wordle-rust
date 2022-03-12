@@ -23,6 +23,7 @@ It was not able to solve: masse
 It was not able to solve: weary
 It was not able to solve: query
 It was not able to solve: tangy
+It was not able to solve: solar
 It was not able to solve: perky
 It was not able to solve: pause
 It was not able to solve: aroma
@@ -66,7 +67,6 @@ It was not able to solve: mound
 It was not able to solve: apple
 It was not able to solve: minty
 It was not able to solve: spawn
-It was not able to solve: stack
 It was not able to solve: nanny
 It was not able to solve: woozy
 It was not able to solve: stank
@@ -74,7 +74,6 @@ It was not able to solve: prone
 It was not able to solve: bowel
 It was not able to solve: smile
 It was not able to solve: dross
-It was not able to solve: patio
 It was not able to solve: might
 It was not able to solve: still
 It was not able to solve: aping
@@ -90,6 +89,7 @@ It was not able to solve: blink
 It was not able to solve: thank
 It was not able to solve: poppy
 It was not able to solve: swore
+It was not able to solve: mason
 It was not able to solve: beset
 It was not able to solve: queue
 It was not able to solve: magic
@@ -115,8 +115,8 @@ It was not able to solve: shied
 It was not able to solve: putty
 It was not able to solve: brass
 It was not able to solve: outer
-It was not able to solve: razor
 It was not able to solve: swear
+It was not able to solve: salon
 It was not able to solve: nudge
 It was not able to solve: pitch
 It was not able to solve: unzip
@@ -154,7 +154,6 @@ It was not able to solve: boxer
 It was not able to solve: pizza
 It was not able to solve: tempo
 It was not able to solve: droop
-It was not able to solve: savoy
 It was not able to solve: steep
 It was not able to solve: mammy
 It was not able to solve: swamp
@@ -176,7 +175,6 @@ It was not able to solve: waxen
 It was not able to solve: jerky
 It was not able to solve: towel
 It was not able to solve: wispy
-It was not able to solve: toast
 It was not able to solve: route
 It was not able to solve: radii
 It was not able to solve: lager
@@ -221,12 +219,12 @@ It was not able to solve: jazzy
 It was not able to solve: torus
 It was not able to solve: ninny
 It was not able to solve: viper
+It was not able to solve: moral
 It was not able to solve: vogue
 It was not able to solve: terra
 It was not able to solve: teary
 It was not able to solve: chart
 It was not able to solve: leper
-It was not able to solve: savor
 It was not able to solve: toxic
 It was not able to solve: butte
 It was not able to solve: tripe
@@ -235,6 +233,7 @@ It was not able to solve: rarer
 It was not able to solve: amiss
 It was not able to solve: waver
 It was not able to solve: scant
+It was not able to solve: snack
 It was not able to solve: revel
 It was not able to solve: talon
 It was not able to solve: salve
@@ -250,6 +249,7 @@ It was not able to solve: penny
 It was not able to solve: satin
 It was not able to solve: parka
 It was not able to solve: gloss
+It was not able to solve: tonga
 It was not able to solve: flare
 It was not able to solve: wound
 It was not able to solve: taker
@@ -284,8 +284,7 @@ It was not able to solve: rodeo
 It was not able to solve: manly
 It was not able to solve: vaunt
 It was not able to solve: willy
-It was not able to solve: rayon
 It was not able to solve: match
 It was not able to solve: shave
-Solved 2020
-Failed 289
+Solved 2021
+Failed 288
