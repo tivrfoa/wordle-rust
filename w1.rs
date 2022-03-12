@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
-const LAST_BEST: u32 = 2077;
+const LAST_BEST: u32 = 2088;
 
 /*
 
@@ -136,7 +136,8 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
             }
         }
         if !found {
-            guess = possible_words[0].as_bytes();
+			let idx = possible_words.len() / 2;
+            guess = possible_words[idx].as_bytes();
         }
     }
     println!("It was not able to solve: {}", ans);

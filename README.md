@@ -1,5 +1,5 @@
 
-Currently it solves 2077 out of 2309 words ... not that bad ...
+Currently it solves 2088 out of 2309 words ... not that bad ...
 
 The Jon Gjengset `escore` implementation only fails to solve 19 words in no more than
 6 attempts, which is amazing!!
