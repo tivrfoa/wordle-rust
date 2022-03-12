@@ -11,6 +11,8 @@ cut -c4-4 dictionary.txt | sort | uniq -c > dictionary-pos4-letter-frequency.txt
 cut -c5-5 dictionary.txt | sort | uniq -c > dictionary-pos5-letter-frequency.txt
 ```
 
+![Letter Frequency Per Position](letters-frequency-per-position.png)
+
 ## Running
 
 ```sh
