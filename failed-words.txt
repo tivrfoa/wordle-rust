@@ -88,7 +88,6 @@ It was not able to solve: verse
 It was not able to solve: hovel
 It was not able to solve: verve
 It was not able to solve: basin
-It was not able to solve: layer
 It was not able to solve: tatty
 It was not able to solve: matey
 It was not able to solve: river
@@ -150,7 +149,6 @@ It was not able to solve: detox
 It was not able to solve: novel
 It was not able to solve: waxen
 It was not able to solve: toast
-It was not able to solve: lager
 It was not able to solve: swell
 It was not able to solve: latch
 It was not able to solve: mover
@@ -186,6 +184,7 @@ It was not able to solve: jazzy
 It was not able to solve: torus
 It was not able to solve: ninny
 It was not able to solve: kneed
+It was not able to solve: eager
 It was not able to solve: terra
 It was not able to solve: tried
 It was not able to solve: swoop
@@ -209,7 +208,6 @@ It was not able to solve: penny
 It was not able to solve: gross
 It was not able to solve: avian
 It was not able to solve: satin
-It was not able to solve: gayer
 It was not able to solve: wound
 It was not able to solve: salvo
 It was not able to solve: sappy
@@ -237,5 +235,5 @@ It was not able to solve: vaunt
 It was not able to solve: match
 It was not able to solve: riser
 It was not able to solve: rower
-Solved 2070
-Failed 239
+Solved 2072
+Failed 237
