@@ -125,11 +125,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
             new_words.push(w);
         }
         possible_words = new_words;
-        if possible_words.len() == 0 {
-            //println!("Failed to find answer for {}", ans);
-            *qt_failed += 1;
-            return;
-        }
+
         let mut found = false;
         while best_candidates.len() > 0 {
             let tmp = best_candidates.pop().unwrap();
