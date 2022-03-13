@@ -9,7 +9,6 @@ It was not able to solve: goner
 It was not able to solve: tweed
 It was not able to solve: boozy
 It was not able to solve: click
-It was not able to solve: finer
 It was not able to solve: brake
 It was not able to solve: craze
 It was not able to solve: ferry
@@ -57,7 +56,6 @@ It was not able to solve: dilly
 It was not able to solve: woody
 It was not able to solve: snuff
 It was not able to solve: gaunt
-It was not able to solve: infer
 It was not able to solve: drove
 It was not able to solve: while
 It was not able to solve: shift
@@ -114,7 +112,6 @@ It was not able to solve: dully
 It was not able to solve: crack
 It was not able to solve: witch
 It was not able to solve: goofy
-It was not able to solve: rider
 It was not able to solve: fussy
 It was not able to solve: daunt
 It was not able to solve: going
@@ -122,5 +119,5 @@ It was not able to solve: vaunt
 It was not able to solve: willy
 It was not able to solve: roger
 It was not able to solve: rural
-Solved 2185
-Failed 124
+Solved 2188
+Failed 121
