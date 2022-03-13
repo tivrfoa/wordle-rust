@@ -39,7 +39,6 @@ It was not able to solve: swift
 It was not able to solve: eater
 It was not able to solve: stage
 It was not able to solve: nerve
-It was not able to solve: doing
 It was not able to solve: dying
 It was not able to solve: buddy
 It was not able to solve: stung
@@ -83,7 +82,6 @@ It was not able to solve: sewer
 It was not able to solve: fuzzy
 It was not able to solve: foist
 It was not able to solve: ninny
-It was not able to solve: owing
 It was not able to solve: chide
 It was not able to solve: eager
 It was not able to solve: odder
@@ -114,10 +112,9 @@ It was not able to solve: witch
 It was not able to solve: goofy
 It was not able to solve: fussy
 It was not able to solve: daunt
-It was not able to solve: going
 It was not able to solve: vaunt
 It was not able to solve: willy
 It was not able to solve: roger
 It was not able to solve: rural
-Solved 2188
-Failed 121
+Solved 2191
+Failed 118
