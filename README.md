@@ -1,5 +1,7 @@
+The table-music-proxy approach solves 2185/2309 words!<br>
+These words are great to reduce the search space.
 
-Currently it solves 2088 out of 2309 words ... not that bad ...
+The first approach solves 2088 out of 2309 words ... not that bad ...
 
 The Jon Gjengset `escore` implementation only fails to solve 19 words in no more than
 6 attempts, which is amazing!!
