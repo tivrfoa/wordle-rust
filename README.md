@@ -1,7 +1,11 @@
-The table-music-proxy approach solves 2196/2309 words!<br>
+The [table-music-proxy.rs](table-music-proxy.rs) approach solves 2196/2309 words!<br>
 These words are great to reduce the search space.
 
-The first approach solves 2088 out of 2309 words ... not that bad ...
+The [frequency-solution1.rs](frequency-solution1.rs) solves 2132 words.<br>
+I really liked to code that. It's an interesting algorithm.
+
+The [first approach](first-approach-manual-list.rs) solves 2088 out of 2309
+words ... not that bad ...
 
 The Jon Gjengset `escore` implementation only fails to solve 19 words in no more than
 6 attempts, which is amazing!!
