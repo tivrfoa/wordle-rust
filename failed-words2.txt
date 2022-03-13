@@ -61,7 +61,6 @@ It was not able to solve: shift
 It was not able to solve: puppy
 It was not able to solve: beget
 It was not able to solve: stunt
-It was not able to solve: wager
 It was not able to solve: flank
 It was not able to solve: giver
 It was not able to solve: ditty
@@ -93,10 +92,8 @@ It was not able to solve: dingy
 It was not able to solve: drill
 It was not able to solve: rarer
 It was not able to solve: waver
-It was not able to solve: wafer
 It was not able to solve: stave
 It was not able to solve: chock
-It was not able to solve: fight
 It was not able to solve: drone
 It was not able to solve: toddy
 It was not able to solve: fizzy
@@ -116,5 +113,5 @@ It was not able to solve: vaunt
 It was not able to solve: willy
 It was not able to solve: roger
 It was not able to solve: rural
-Solved 2191
-Failed 118
+Solved 2194
+Failed 115

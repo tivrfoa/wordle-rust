@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 const MAX_ATTEMPS: u8 = 6;
 const ALPHABET_SIZE: usize = 26;
-const LAST_BEST: u32 = 2191;
+const LAST_BEST: u32 = 2194;
 
 /*
 
@@ -50,7 +50,8 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
         "moans", "music", "racer", "rover", "riper", "rayon", "rates", "rusty", "perky",
         "paper", "picky", "patch", "prone", "proxy", "paste", "troop", "tower", "tasty", "teary",
         "table", "spike", "steer", "stark", "steal", "stack", "store", "spite", "scary", "super", "sower",
-        "worst", "winch", "watch", "worse", "wares", "layer", "water", "baldy", "doing", "finer", "ceils",
+        "worst", "winch", "watch", "worse", "wares", "layer", "water", "baldy",
+		"wafer", "fight", "doing", "finer", "ceils",
     ];
     let mut attempts = 0;
     while attempts <= MAX_ATTEMPS {
@@ -129,6 +130,7 @@ fn solve(ans: &str, dictionary: &Vec<&str>, qt_solved: &mut u32, qt_failed: &mut
         possible_words = new_words;
     }
     println!("It was not able to solve: {}", ans);
+	dbg!(ans);
     dbg!(possible_words);
     *qt_failed += 1;
 }
