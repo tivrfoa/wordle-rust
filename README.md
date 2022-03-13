@@ -1,4 +1,4 @@
-The table-music-proxy approach solves 2194/2309 words!<br>
+The table-music-proxy approach solves 2196/2309 words!<br>
 These words are great to reduce the search space.
 
 The first approach solves 2088 out of 2309 words ... not that bad ...

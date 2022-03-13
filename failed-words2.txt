@@ -12,7 +12,6 @@ It was not able to solve: click
 It was not able to solve: brake
 It was not able to solve: craze
 It was not able to solve: ferry
-It was not able to solve: lowly
 It was not able to solve: natal
 It was not able to solve: goose
 It was not able to solve: stead
@@ -42,7 +41,6 @@ It was not able to solve: nerve
 It was not able to solve: dying
 It was not able to solve: buddy
 It was not able to solve: stung
-It was not able to solve: dolly
 It was not able to solve: diver
 It was not able to solve: hardy
 It was not able to solve: shied
@@ -67,6 +65,7 @@ It was not able to solve: ditty
 It was not able to solve: dirge
 It was not able to solve: wider
 It was not able to solve: false
+It was not able to solve: haunt
 It was not able to solve: beefy
 It was not able to solve: swell
 It was not able to solve: wight
@@ -91,7 +90,6 @@ It was not able to solve: funky
 It was not able to solve: dingy
 It was not able to solve: drill
 It was not able to solve: rarer
-It was not able to solve: waver
 It was not able to solve: stave
 It was not able to solve: chock
 It was not able to solve: drone
@@ -108,10 +106,10 @@ It was not able to solve: crack
 It was not able to solve: witch
 It was not able to solve: goofy
 It was not able to solve: fussy
-It was not able to solve: daunt
+It was not able to solve: golly
 It was not able to solve: vaunt
 It was not able to solve: willy
 It was not able to solve: roger
 It was not able to solve: rural
-Solved 2194
-Failed 115
+Solved 2196
+Failed 113
